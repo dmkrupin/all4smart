@@ -1,0 +1,21 @@
+.intro {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__title {
+    font: 700 52px/120% $ff-roboto-condensed;
+    color: $color-default-white;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.intro__address {
+    font: 700 32px/120% $ff-roboto-condensed;
+    color: $color-default-white;
+    letter-spacing: 0.03em;
+    text-align: center;
+}

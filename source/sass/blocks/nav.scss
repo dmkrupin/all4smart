@@ -25,6 +25,10 @@
     @media (hover: hover), screen and (min-width: 0\0) {
         &:hover,
         &:focus {
+            .nav__link {
+                background-color: transparentize($color: $color-default-black, $amount: 0.95);
+            }
+
             &::after {
                 content: "";
                 display: block;
@@ -44,4 +48,5 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
+    transition: background $trans-default;
 }
