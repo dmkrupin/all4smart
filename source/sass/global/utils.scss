@@ -1,21 +1,16 @@
 .wrapper {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: start;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
-  .header,
-  .footer {
-    flex-shrink: 0;
-  }
-
-  main {
-    flex-grow: 1;
-    overflow-x: hidden;
-  }
 }
 
 .rouble {
