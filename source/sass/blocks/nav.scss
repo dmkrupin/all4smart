@@ -26,7 +26,7 @@
         &:hover,
         &:focus {
             .nav__link {
-                background-color: transparentize($color: $color-default-black, $amount: 0.95);
+                background: linear-gradient(to top, transparentize($color: $color-default-black, $amount: 0.95), $color-default-white);
             }
 
             &::after {
