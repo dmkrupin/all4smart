@@ -1,0 +1,11 @@
+.footer {
+    height: 64px;
+    padding: 10px 0;
+    background-color: $color-night-rider;
+
+    p {
+        font: 400 15px/120% $ff-roboto-condensed;
+        color: $color-default-white;
+        opacity: 0.6;
+    }
+}

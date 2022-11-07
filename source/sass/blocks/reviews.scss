@@ -1,0 +1,24 @@
+.reviews {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+}
+
+.reviews__contents {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.reviews__title {
+    font: 700 48px/120% $ff-roboto-condensed;
+    color: $color-default-black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reviews__button {
+    align-self: center;
+    font-size: 32px;
+    padding: 20px 25px;
+}

@@ -1,0 +1,22 @@
+.request {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+}
+
+.request__contents {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.request__title {
+    font: 700 48px/120% $ff-roboto-condensed;
+    color: $color-default-black;
+    text-align: center;
+}
+
+.request__form {
+    width: 50%;
+    align-self: center;
+}
