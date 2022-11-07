@@ -40,16 +40,16 @@
               <a href="#services" class="nav__link">Услуги</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">О нас</a>
+              <a href="#about-us" class="nav__link">О нас</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Примеры работ</a>
+              <a href="#works" class="nav__link">Примеры работ</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Отзывы</a>
+              <a href="#reviews" class="nav__link">Отзывы</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
+              <a href="#contacts" class="nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -97,55 +97,99 @@
             </div>
           </div>  
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
           <div class="container">
-            <div class="section">
+            <div class="about-us__contents section">
               <h2 class="about-us__title">О нас</h2>
-              Уже 5 лет
-              ремонтируем технику
-
-              Более 3000 человек
-              обратились к нам с 2015 года
-
-              Из них
-              70% с разбитыми экранами
+              <ul class="about-us__list">
+                <li class="about-us__item">
+                  <span>Уже 5 лет</span>&nbsp;ремонтируем технику</li>
+                <li class="about-us__item">
+                  <span>Более 3000 человек</span>&nbsp;обратились к нам с 2015 года</li>
+                <li class="about-us__item">
+                  <span>Из них 70%</span>&nbsp;- с разбитыми экранами
+                </li>
+              </ul>
             </div>
           </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
           <div class="container">
-            <div class="section">
+            <div class="works__contents section">
               <h2 class="works__title">Примеры работ</h2>
+              <div class="works__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_1.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_2.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">3</div>
+                  <div class="swiper-slide works__slide">4</div>
+                  <div class="swiper-slide works__slide">5</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="works">
+        <section class="reviews" id="reviews">
           <div class="container">
-            <div class="section">
-              <h2 class="works__title">Отзывы клиентов</h2>
+            <div class="reviews__contents section">
+              <h2 class="reviews__title">Отзывы клиентов</h2>
+              <a href="https://yandex.ru/maps/org/all_4_smart/129019858798/reviews/?ll=35.869814%2C56.853081&z=14" target="_blank" class="reviews__button btn">Посмотреть</a>
             </div>
           </div>
         </section>
         <section class="request">
           <div class="container">
-            <div class="section">
+            <div class="request__contents section">
               <h2 class="request__title">Оставьте заявку</h2>
-              <form action="">
-                <input type="number" name="">
-                <input type="text" name="">
-                <textarea name="" cols="30" rows="10"></textarea>
-                <button type="submit"></button>
+              <form class="request__form" action="send.php" method="post">
+                <label>
+                  <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                </label>
+                <label>
+                  <input type="text" name="fio" placeholder="Иван Петров" required>
+                </label>
+                <textarea name="msg" cols="30" rows="10" placeholder="До 280 символов" required></textarea>
+                <button class="request__submit btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
         </section>
-        <section class="contacts">
-          <h2 class="request__title">Наши контакты</h2>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <h2 class="contacts__title">Наши контакты</h2>
+            <div class="contacts__wrapper">
+              <section class="contacts__info">
+                <p class="contacts__item">
+                  <span>Телефон</span>
+                  <a href="tel: +79105360161">+7 (910) 536-01-61</a>
+                </p>
+                <p class="contacts__item">
+                  <span>E-mail</span>
+                  <a href="mailto:all4smart69@gmail.com">all4smart69@gmail.com</a>
+                </p>
+                <p class="contacts__item">
+                  <span>Часы работы</span>
+                  <span>Ежедневно с 10:00 до 19:00</span>
+                </p>
+              </section>
+              <section class="contacts__map">
+                <div style="overflow:hidden;">
+                  <a href="https://yandex.ru/maps/14/tver/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Тверь</a>
+                  <a href="https://yandex.ru/maps/14/tver/?from=mapframe&ll=35.914484%2C56.853521&mode=usermaps&source=mapframe&um=constructor%3A71c3bd3191947eb04e966fe2667e9bf442a568984b3493e7923b59bcf29e6b34&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+                  <iframe src="https://yandex.ru/map-widget/v1/-/CCU66HbccD" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+              </section>
+            </div>  
+          </div>
         </section>
       </main>
       <footer class="footer">
         <div class="container">
-          123
+          <p>© All 4 Smart 2022</p>
         </div>
       </footer>
     </div>
