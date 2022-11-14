@@ -12,6 +12,9 @@
     background-color: $color-default-white;
 }
 
-.header__call {
-    align-self: center;
+.header__logo {
+    img {
+        width: 250px;
+        height: 70px;
+    }
 }

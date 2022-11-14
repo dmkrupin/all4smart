@@ -8,9 +8,14 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
+    background-image: url("../img/content/block-2.jpg");
+    background-repeat: no-repeat;
+    background-position: -620px 0;
+    background-size: cover;
 }
 
 .request__title {
+    margin-bottom: 130px;
     font: 700 48px/120% $ff-roboto-condensed;
     color: $color-default-black;
     text-align: center;
@@ -19,4 +24,5 @@
 .request__form {
     width: 50%;
     align-self: center;
+    margin-bottom: 120px;
 }

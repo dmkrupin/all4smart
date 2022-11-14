@@ -1,5 +1,5 @@
 .section {
-    background-color: transparentize($color: $color-default-white, $amount: 0.4);
+    background-color: $color-white-smoke;
     border-radius: 10px;
     border: 1px solid $color-default-white;
 }

@@ -7,15 +7,28 @@
 }
 
 .intro__title {
-    font: 700 52px/120% $ff-roboto-condensed;
-    color: $color-default-white;
+    margin-bottom: 10px; 
+    font: 700 64px/120% $ff-roboto-condensed;
+    color: $color-tangerine-yellow;
     letter-spacing: 0.01em;
     text-align: center;
+
+    text-shadow: 1px 0 1px $color-default-black, 
+        0 1px 1px $color-default-black, 
+        -1px 0 1px $color-default-black, 
+        0 -1px 1px $color-default-black;
 }
 
 .intro__address {
-    font: 700 32px/120% $ff-roboto-condensed;
-    color: $color-default-white;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    font: 700 42px/120% $ff-roboto-condensed;
+    color: $color-tangerine-yellow;
     letter-spacing: 0.03em;
     text-align: center;
+
+    text-shadow: 1px 0 1px $color-default-black, 
+    0 1px 1px $color-default-black, 
+    -1px 0 1px $color-default-black, 
+    0 -1px 1px $color-default-black;
 }

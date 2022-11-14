@@ -2,15 +2,15 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 17px;
+    gap: 30px;
 
     label {
         input {
             width: 100%;
-            padding: 5px 5px 5px 15px;
+            padding: 10px 10px 10px 15px;
             border: 2px solid $color-default-black;
             border-radius: 1px;
-            font: 400 20px/120% $ff-roboto-condensed;
+            font: 400 24px/120% $ff-roboto-condensed;
 
             @media (hover: hover), screen and (min-width: 0\0) {
                 &:focus {
