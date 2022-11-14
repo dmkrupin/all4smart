@@ -51,10 +51,6 @@
     }    
 }
 
-.services__key-points-cover {
-    display: none;
-}
-
 .services__key-points-title {
     margin-top: 50px;
     font: 700 36px/120% $ff-roboto-condensed;
@@ -95,5 +91,47 @@
         font: 700 256px/100% $ff-roboto-condensed;
         color: $color-default-black;
         opacity: 0.2;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    .services__key-points-cover {
+        @include unselectable;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: $color-default-black;
+        background-color: $color-default-white;
+
+        // display: none;
+        transition: height $trans-default;
+
+        p {
+            margin: 0;
+            padding: 0;
+            text-transform: none;
+            font: 400 20px/120% $ff-roboto-condensed;
+
+            margin-bottom: 10px;
+        }
+    }
+
+    .services__key-points-contents {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
