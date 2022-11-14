@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix.js';
 import {initModals} from './modules/modals/init-modals.js';
 import {initSwipers} from './modules/init-swipers.js';
+import {initServicesCards} from './modules/init-services-cards.js';
 import {initFormValidation} from './modules/form-validation.js';
 
 // ---------------------------------
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initSwipers();
+    initServicesCards();
     initFormValidation();
   });
 });
