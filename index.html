@@ -33,7 +33,12 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <a class="header__logo" href="#">logo</a>
+        <a class="header__logo" href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/content/logo-mobile.jpg">
+            <img src="img/content/logo-desktop.jpg" width="250" height="90" alt="Логотип">
+          </picture>
+        </a>
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -53,13 +58,12 @@
             </li>
           </ul>
         </nav>
-        <button class="header__call btn" type="button">Позвонить</button>
       </header>
       <main class="main">
         <section class="intro">
           <h1 class="intro__title">Ремонт телефонов и планшетов в Твери</h1>
-          <p class="intro__address">ТРЦ Рубин 2 и ТРЦ Рио</p>
-          <a class="intro__request btn btn--big">Отправить заявку</a>
+          <p class="intro__address">ТРЦ "Рубин 2" и ТРЦ "Рио"</p>
+          <a href="#request" class="intro__request btn btn--big">Отправить заявку</a>
         </section>
         <section class="services" id="services">
           <div class="container">
@@ -82,16 +86,55 @@
               <h3 class="services__key-points-title">Почему мы?</h3>
               <ul class="services__key-points-list">
                 <li class="services__key-points-item">
-                  бесплатная диагностика (без обязательных платежей?)
+                  <div class="services__key-points-cover">
+                    <p>
+                      Диагностика бесплатна при последующем ремонте у нас. 
+                      Так же проводим предпродажную диагностику, 
+                      даём дополнительное мнение к заключениям других сервисов. 
+                      Проводим диагностику любой мобильной техники.
+                    </p>
+                  </div>
+                  <div class="services__key-points-content">
+                    <p>Бесплатная диагностика</p>
+                  </div>
                 </li>
                 <li class="services__key-points-item">
-                  ремонт в день обращения
+                  <div class="services__key-points-cover">
+                    <p>
+                      Большое количество запчастей имеется в наличии.
+                      95% обращений обрабатываем в день обращения.
+                      Буквально через несколько часов после обращения можно забрать готовый после ремонта телефон!
+                    </p>
+                  </div>
+                  <div class="services__key-points-content">
+                    <p>Ремонт в день обращения</p>
+                  </div>
                 </li>
                 <li class="services__key-points-item">
-                  гарантия (сколько?)
+                  <div class="services__key-points-cover">
+                    <p>
+                      Гарантия на все виды работ, которые мы производим.
+                      Срок гарантии зависит от вида работ.
+                      На основные виды работ даём гарантию от 1 до 6 месяцев.
+                      Гарантийные обязательства не распространяются на пост-ремонтные механические повреждения.
+                    </p>
+                  </div>
+                  <div class="services__key-points-content">
+                    <p>Гарантия на все виды работ</p>
+                  </div>                  
                 </li>
                 <li class="services__key-points-item">
-                  низкие цены
+                  <div class="services__key-points-cover">
+                    <p>
+                      Диагностика бесплатна при последующем ремонте у нас. 
+                      Так же проводим предпродажную диагностику, 
+                      даём дополнительное мнение к заключениям других сервисов. 
+                      Проводим диагностику любой мобильной техники.
+                    </p>
+                  </div>
+                  <div class="services__key-points-content">
+                    <p>Низкие цены</p>
+                  </div>
                 </li>
               </ul>  
             </div>
@@ -103,11 +146,21 @@
               <h2 class="about-us__title">О нас</h2>
               <ul class="about-us__list">
                 <li class="about-us__item">
-                  <span>Уже 5 лет</span>&nbsp;ремонтируем технику</li>
+                  <span>Более 3-х лет</span>&nbsp;ремонтируем технику</li>
                 <li class="about-us__item">
-                  <span>Более 3000 человек</span>&nbsp;обратились к нам с 2015 года</li>
+                  <span>Более 4000 человек</span>&nbsp;обратились к нам с 2019 года
+                </li>
                 <li class="about-us__item">
-                  <span>Из них 70%</span>&nbsp;- с разбитыми экранами
+                  95% ремонтов отдаются клиентам готовыми&nbsp;<span>в день обращения</span>
+                </li>  
+                <li class="about-us__item">
+                  <span>Высококвалифицированные сотрудники</span>&nbsp;с большим опытом работы в этой сфере
+                </li>
+                <li class="about-us__item">
+                  <span>Широкий спектр</span>&nbsp;выполняемых работ и обслуживаемой техники
+                </li>
+                <li class="about-us__item">
+                  По Вашему желанию можем выполнить ремонт&nbsp;<span>при Вас</span>
                 </li>
               </ul>
             </div>
@@ -125,9 +178,51 @@
                   <div class="swiper-slide works__slide">
                     <img src="img/content/works_2.jpg">
                   </div>
-                  <div class="swiper-slide works__slide">3</div>
-                  <div class="swiper-slide works__slide">4</div>
-                  <div class="swiper-slide works__slide">5</div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_3.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_4.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_5.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_6.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_7.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_8.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_9.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_10.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_11.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_12.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_13.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_14.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_15.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_16.jpg">
+                  </div>
+                  <div class="swiper-slide works__slide">
+                    <img src="img/content/works_17.jpg">
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,7 +236,7 @@
             </div>
           </div>
         </section>
-        <section class="request">
+        <section class="request" id="request">
           <div class="container">
             <div class="request__contents section">
               <h2 class="request__title">Оставьте заявку</h2>
@@ -159,32 +254,23 @@
           </div>
         </section>
         <section class="contacts" id="contacts">
-          <div class="container">
+          <section class="contacts__info">
             <h2 class="contacts__title">Наши контакты</h2>
-            <div class="contacts__wrapper">
-              <section class="contacts__info">
-                <p class="contacts__item">
-                  <span>Телефон</span>
-                  <a href="tel: +79105360161">+7 (910) 536-01-61</a>
-                </p>
-                <p class="contacts__item">
-                  <span>E-mail</span>
-                  <a href="mailto:all4smart69@gmail.com">all4smart69@gmail.com</a>
-                </p>
-                <p class="contacts__item">
-                  <span>Часы работы</span>
-                  <span>Ежедневно с 10:00 до 19:00</span>
-                </p>
-              </section>
-              <section class="contacts__map">
-                <div style="overflow:hidden;">
-                  <a href="https://yandex.ru/maps/14/tver/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Тверь</a>
-                  <a href="https://yandex.ru/maps/14/tver/?from=mapframe&ll=35.914484%2C56.853521&mode=usermaps&source=mapframe&um=constructor%3A71c3bd3191947eb04e966fe2667e9bf442a568984b3493e7923b59bcf29e6b34&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
-                  <iframe src="https://yandex.ru/map-widget/v1/-/CCU66HbccD" allowfullscreen="true" style="position:relative;"></iframe>
-                </div>
-              </section>
-            </div>  
-          </div>
+            <p class="contacts__item">
+              <span>Телефон</span>
+              <a href="tel: +79105360161">+7 (910) 536-01-61</a>
+            </p>
+            <p class="contacts__item">
+              <span>E-mail</span>
+              <a href="mailto:all4smart69@gmail.com">all4smart69@gmail.com</a>
+            </p>
+            <p class="contacts__item">
+              <span>Часы работы</span>
+              <span>Ежедневно с 10:00 до 19:00</span>
+            </p>
+          </section>    
+
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCU66HbccD" allowfullscreen="true"></iframe>
         </section>
       </main>
       <footer class="footer">
